@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<title>MattMX - CST</title>
+<head>
+    <div class="blurred-box">
+        <div class="user-name"><font face="Arial Black" size="15"><b>ClientSideTeams</b><br /></font><font face="Arial" size="6">A Minecraft utility mod.<br /><br />
+            <a href="#about"><img src="down_arrow.png" width="50px" /></a>
+            </font>
+        </div>
+    </div>
+    <div class="about-section">
+        <section id="about">
+            <font face="Arial Black" size="15">What is it?<br /></font>
+            <font face="Arial" size="4"><font color="red">CST</font> is a utility mod, where you can see your favorite minecraft teams in minecraft, on your client exclusively. <br /><i>Take a look...</i></font>
+            <div class="grid-container">
+                <div class="grid-item">1</div>
+                <div class="grid-item"><img src="https://cdn.discordapp.com/attachments/353610491442102274/835276092989898762/unknown.png" width="50%" /></div>
+                <div class="grid-item"><img src="https://cdn.discordapp.com/attachments/353610491442102274/835275917408337930/unknown.png" width="50%" /></div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item"><img src="https://cdn.discordapp.com/attachments/353610491442102274/835276508666265630/unknown.png" width="50%" /></div>
+            </div>
+        </section>
+    </div>
+    <div class="links">
+        <a href="https://discord.gg/4UP6SgGGr3" target="_blank"><img src="https://discord.com/assets/1c8a54f25d101bdc607cec7228247a9a.svg" width="30px" height="30px" /></a>
+        <a href="https://www.youtube.com/channel/UCAVYIWz1R7RLQwns4oofcKw" target="_blank"><img src="youtube.png" width="35px" height="27px" /></a>
+    </div>
+    <div id="fixedheader">
+        <font face="verdana">
+            <a href="index.html">
+                &emsp;<b>MX</b>&emsp;|&emsp; MattMX. &emsp;&emsp;
+            </a>
+            <ul>
+                <li>
+                    Projects
+                    <ul>
+                        <li><a href="clientsideteams.html">ClientSideTeams</a></li>
+                        <li><a href="https://www.curseforge.com/minecraft/mc-mods/clientbot" target="_blank">ChatBot</a></li>
+                        <li><a href="store-other.html">Inferno Client</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </font>
+    </div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        body {
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: top;
+            background-image: url(clientsideteams_bg.png);
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica;
+            letter-spacing: 0.02em;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .blurred-box {
+            position: relative;
+            width: 500px;
+            height: 175px;
+            padding-top:50px;
+            padding-left:50px;
+            padding-right:50px;
+            padding-bottom:50px;
+            top: calc(50% - 50px);
+            left: calc(50% - 275px);
+            background: inherit;
+            box-shadow: inset 0 0 0 200px rgba(0,0,0,0.5);
+            border-radius: 2px;
+            overflow: hidden;
+            text-align: left;
+        }
+
+        .user-icon {
+            height: 75px;
+            width: 75px;
+            font-family: Veranda;
+            animation-name: fadein;
+            animation-duration: 4s;
+        }
+
+        .links {
+            right: 20px;
+            bottom: 20px;
+            width: 1000px;
+            height: 20px;
+            position: fixed;
+            color: white;
+            padding: 30px;
+            text-align: right;
+        }
+
+        div a {
+            text-decoration: none;
+            color: inherit;
+            padding: 8px;
+            display: inline-block;
+        }
+
+        ul {
+            display: inline;
+        }
+
+            ul li {
+                display: inline-block;
+            }
+
+                ul li:hover {
+                    animation-name: fadein;
+                    animation-duration: 0.5s;
+                }
+
+                    ul li:hover ul {
+                        background-color:black;
+                        display: block;
+                    }
+
+                ul li ul {
+                    position: absolute;
+                    width: 200px;
+                    display: none;
+                }
+
+                    ul li ul li {
+                        background: #FFF;
+                        display: block;
+                    }
+
+                        ul li ul li a {
+                            display: block !important;
+                        }
+
+                        ul li ul li:hover {
+                            background: #FFF;
+                        }
+
+        .user-name {
+            text-align:center;
+            color: white;
+            animation-name: fadein;
+            animation-duration: 4s;
+        }
+
+        div#fixedheader {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 4%;
+            box-shadow: inset 0 0 0 200px rgba(0,0,0,0.5);
+            color: white;
+            padding: 10px;
+            opacity: 1;
+            transition: .5s ease;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+
+        div#fixedheader:hover {
+            box-shadow: inset 0 0 0 200px rgba(255,255,255,1);
+            color: black;
+        }
+
+        .about-section {
+            text-align:left;
+            position:relative;
+            bottom: -100%;
+            left: 0px;
+            height: auto;
+            width: 95%;
+            padding-bottom:5%;
+            padding-top:3%;
+            padding-left:5%;
+            background-color: white;
+        }
+
+        .image-right{
+            float:right;
+        }
+
+        .image-left{
+            float:left;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 30% 30%;
+            padding: 10px;
+        }
+
+        .grid-item {
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1.0;
+            }
+    </style>
+</head>
+</html>
